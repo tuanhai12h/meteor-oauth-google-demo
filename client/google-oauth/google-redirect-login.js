@@ -26,7 +26,7 @@ signInGoogleRedirect = function(options)
 callLoginWithGoogleReturn = function(options, callback)
 {
     // solved state after callback data
-    // console.log("options %o", options);
+    console.log("options %o", options);
 
     // transfer code to login function by get Token return
     var code = options.code;

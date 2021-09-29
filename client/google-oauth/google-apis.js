@@ -80,7 +80,7 @@ signInGoogleAuth2 = function(options, callback)
 	if (gapi && gapi.auth2)
 	{
 		gapi.auth2.getAuthInstance().signIn({
-			prompt: 'select_account'
+			// prompt: 'select_account'
 		}).then(
 			function(result)
 			{
