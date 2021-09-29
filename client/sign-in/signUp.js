@@ -1,8 +1,12 @@
 Template.signUp.events(
 {
-    'click .btnSignIn': function() 
+    'click .btnSignIn': function(event) 
     {
-        Router.go('signin');
+        Meteor.setTimeout(function() 
+        {
+            Router.go('/signin');
+            
+        }, 300);
     },
 
     'click .btnLoginGoogle': function() 

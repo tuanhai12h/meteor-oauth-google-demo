@@ -1,4 +1,16 @@
-.max-width-400 {
-    max-width: 400px;
+.max-width-500 {
+    max-width: 500px;
     margin: 40px auto;
+}
+
+.max-width-800 {
+    max-width: 800px;
+    margin: 40px auto;
+}
+
+pre.json {
+    white-space: pre-wrap;
+    font-size: xx-small;
+    background: #eee;
+    padding: 10px;
 }

@@ -1,8 +1,13 @@
 <template name="accountInfo">
-    <div class="card max-width-400">
+    <div class="card max-width-800">
 		<article class="card-body">
 			<a href="" class="float-right btn btn-outline-primary btnSignOut">Sign out</a>
 			<h4 class="card-title mb-4 mt-1">Account Information</h4>
+
+			<pre class="json">
+				{{user}}
+			</pre>
+
 		</article>
 	</div>
 </template>
