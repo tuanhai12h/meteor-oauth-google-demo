@@ -7,23 +7,19 @@ googleDiscoveryDocs = [
 ];
 
 // Enter one or more authorization scopes. Refer to the documentation for
-// the API or https://developers.google.com/people/v1/how-tos/authorizing
-// for details.
+// the API or https://developers.google.com/people/v1/how-tos/authorizing for details.
 googleScopes = 'profile email';
 // Authorization scopes required by the API; multiple scopes can be included, separated by spaces.
 
 // Main method
 connectGoogleAPI = function(options, callback)
 {
-	// todo this is NOT correct. we need to make sure the api is defined AND the user is logged in.
 	if (isGoogleAPI())
 	{
 		signInGoogleAuth2(options, callback);
 
 		return;
 	}
-
-	// todo: we should show user some error msg if the gapi (google api) does not load correctly?
 
 	loadExternalScript('https://apis.google.com/js/api.js', function()
 	{
@@ -88,7 +84,6 @@ signInGoogleAuth2 = function(options, callback)
 		}).then(
 			function(result)
 			{
-				// console.log(result);
 				var token = getGoogleToken();
 				if (debugGoogleAPI) console.log("The token of the Google sign-in is: %o", token);
 
@@ -114,10 +109,6 @@ signInGoogleAuth2 = function(options, callback)
 				// console.log("navigator.cookieEnabled %o", navigator.cookieEnabled);
 				if (error.error === "popup_closed_by_user")
 				{
-					// this is not an error... swallow it. Do NOT tell caller since this is a CANCEL notification
-					// if (callback) callback(null, null);
-					// showAlert('info', "Login Cancelled, OR 3rd-party cookies are OFF. Google sign-in requires 3rd-party cookies.");
-
 					return;
 				}
 				
@@ -161,11 +152,6 @@ logoutGoogleAuth2 = function(callback)
 			if (debugGoogleAPI) console.log("sign out google account");
 			
 			// What the user really means is to "disconnect" the credentials... not just sign out of the account
-	
-			// note... if we are not actually connected to anything, this call is mostly a NOP and NO callback gets fired
-			// I think we might be able to detect that by seeing if a promise is returned from the call??
-			// or call some method like "isconnected" if that exists
-			// but currently, the call executes SILENTLY if there is no GC connection to disconnect.
 
 			if (getGoogleToken())
 			{
