@@ -1,0 +1,25 @@
+<head>
+	<title>Demo Oauth</title>
+	<meta name="fragment" content="!">
+    <link rel="icon" type="image/png" href="/favicon.png">
+    
+	<!-- Meteoric/ionic only -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+
+	<!-- iOS 10 require meta -->
+	<meta http-equiv="Content-Security-Policy" content="frame-src * gap://ready; default-src 'self' gap://ready file://* *; font-src data: *; connect-src * blob: data:; style-src * 'unsafe-inline'; script-src * 'unsafe-eval' 'unsafe-inline'; img-src * data: blob: android-webview-video-poster:;">
+
+	<!-- DNS prefetch -->
+	<meta http-equiv="x-dns-prefetch-control" content="off">
+</head>
+
+<template name="main">
+</template>
+
+<template name="home">
+	{{> signIn}}
+</template>
