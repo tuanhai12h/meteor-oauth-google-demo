@@ -47,38 +47,6 @@ Accounts.onLogin(function(response)
 	// server-side login notification
 	// we are going to store login date on our server and send an event to activecampaign
 
-	// EXAMPLE response data
-	// {
-	// 	type: 'password',
-	// 	allowed: true,
-	// 	methodName: 'login',
-	// 	methodArguments: [ { user: [Object], password: [Object] } ],
-	// 	user:
-	// 	{	_id: '23gNXRvtywxiQgZj6',
-	// 		createdAt: 2020-03-11T05:30:09.552Z,
-	// 		services: { password: [Object], email: [Object], resume: [Object] },
-	// 		emails: [ [Object] ],
-	// 		lastLogin: 2020-03-11T05:42:54.630Z,
-	// 		teacherPrivateInfo: { acId: 9395 },
-	// 		failedLogins: 1,
-	// 		etc...
-	// 	},
-	// 	connection:
-	// 	{ 	id: 'm6BofaBb6y5F7ZKQz',
-	// 		close: [Function: close],
-	// 		onClose: [Function: onClose],
-	// 		clientAddress: '127.0.0.1',
-	// 		httpHeaders:
-	// 		{ 	'x-forwarded-for': '127.0.0.1',
-	// 			'x-forwarded-port': '3000',
-	// 			'x-forwarded-proto': 'ws',
-	// 			host: 'localhost:3000',
-	// 			'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_3) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.0.5 Safari/605.1.15'
-	// 		}
-	// 	}
-	// }
-
-
 	const user = response.user;			// this is basically the entire user doc!
 	const date = new Date();
 

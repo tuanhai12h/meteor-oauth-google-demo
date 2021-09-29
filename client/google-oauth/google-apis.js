@@ -2,12 +2,8 @@
 // access. In this example, we are accessing the People API, so we load
 // Discovery Doc found here: https://developers.google.com/people/api/rest/
 // Array of API discovery doc URLs for APIs used by the quickstart
-
-// Import 2 discovery docs because we can have difference the import google account and the login google account
-// Turn off the discovery docs at 2020-Aug-26
 googleDiscoveryDocs = [	
 	// "https://people.googleapis.com/$discovery/rest?version=v1", 
-	"https://www.googleapis.com/discovery/v1/apis/classroom/v1/rest"
 ];
 
 // Enter one or more authorization scopes. Refer to the documentation for
