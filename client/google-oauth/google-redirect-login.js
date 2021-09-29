@@ -29,7 +29,7 @@ callLoginWithGoogleReturn = function(options, callback)
     // console.log("options %o", options);
 
     // transfer code to login function by get Token return
-    var code = options.codeGoogle;
+    var code = options.code;
     if (!code)
     {
         return;

@@ -1,7 +1,5 @@
 Accounts.registerLoginHandler(function (loginRequest) 
 {
-    console.log(loginRequest);
-
     // Google login
     if (loginRequest.googleResponse)
     {

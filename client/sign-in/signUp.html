@@ -2,21 +2,21 @@
 
     <div class="card max-width-400">
 		<article class="card-body">
-			<a href="" class="float-right btn btn-outline-primary">Sign in</a>
+			<a href="" class="float-right btn btn-outline-primary btnSignIn">Sign in</a>
 			<h4 class="card-title mb-4 mt-1">Sign up</h4>
 			
             <div class="form-group">
-                <input name="" class="form-control" placeholder="Email or login" type="text">
-            </div> <!-- form-group// -->
+				<input id="username" name="" class="form-control" placeholder="Email or login" type="text">
+			</div> <!-- form-group// -->
 
-            <div class="form-group">
-                <input class="form-control" placeholder="******" type="password">
-            </div> <!-- form-group// -->    
+			<div class="form-group">
+				<input id="password" class="form-control" placeholder="******" type="password">
+			</div> <!-- form-group// -->      
 
             <div class="row">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary btn-block"> Create  </button>
+                        <button type="submit" class="btn btn-primary btn-block createAccount"> Create  </button>
                     </div> <!-- form-group// -->
                 </div>                               
             </div> <!-- .row// -->                                                                  
@@ -24,8 +24,8 @@
             <hr>
 
             <p>
-				<a href="" class="btn btn-block btn-outline-info"> <i class="fab fa-google"></i> &nbsp; Login via Google</a>
-				<a href="" class="btn btn-block btn-outline-primary"> <i class="fab fa-google"></i> &nbsp; Login via Google 2</a>
+				<a href="" class="btn btn-block btn-outline-info .btnLoginGoogle"> <i class="fab fa-google"></i> &nbsp; Create via Google</a>
+				<a href="" class="btn btn-block btn-outline-primary btnLoginGoogleAuth2"> <i class="fab fa-google"></i> &nbsp; Create via Google OAuth2</a>
 			</p>
 			
 		</article>

@@ -21,5 +21,10 @@
 </template>
 
 <template name="home">
-	{{> signIn}}
+
+	{{#if currentUser}}
+		{{> accountInfo}}
+	{{else}}
+		{{> signIn}}
+	{{/if}}
 </template>
