@@ -34,6 +34,10 @@ Accounts.onCreateUser(function(options, user)
 	// console.log(user);
 	// console.log("-----");
 	// console.log(options);
+	if (options)
+	{
+		user.profile = options;
+	}
 
 	return user;
 });

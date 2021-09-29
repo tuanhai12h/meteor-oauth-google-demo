@@ -24,10 +24,8 @@ Accounts.registerLoginHandler(function (loginRequest)
 
         // update more profile data default of teacher
         var options = {
-                profile: {
-                    nickname: googleIdentity.name,
-                    picture: googleIdentity.picture
-                }
+                nickname: googleIdentity.name,
+                picture: googleIdentity.picture
             };
         
         return Accounts.updateOrCreateUserFromExternalService('google', serviceData, options);
