@@ -31,7 +31,7 @@ Accounts.registerLoginHandler(function (loginRequest)
         return Accounts.updateOrCreateUserFromExternalService('google', serviceData, options);
     }
 
-    throw new Meteor.Error("You can't connect Boom account via invalid data.");
+    throw new Meteor.Error("You can't connect account via invalid data.");
 });
 
 Meteor.methods(
@@ -60,13 +60,11 @@ Meteor.methods(
 
         } catch (err) {
             throw new Meteor.Error("Failed to fetch identity from Google: " + err.message);
-            // throw _.extend(new Error("Failed to fetch identity from google. " + err.message),
-            //     { response: err.response });
         }
     }
 });
 
-// update new get Identity Google data at Sep 21, 2018
+// update new get Identity Google data
 getIdentityGoogle = function(accessToken)
 {
     if (!accessToken)
@@ -74,7 +72,6 @@ getIdentityGoogle = function(accessToken)
         throw new Meteor.Error("Failed to get Google data.");
     }
 
-    // new url update Sep 21, 2018
     var urlRequest = 'https://www.googleapis.com/oauth2/v1/userinfo';
     try {
         return HTTP.call('GET', urlRequest, {

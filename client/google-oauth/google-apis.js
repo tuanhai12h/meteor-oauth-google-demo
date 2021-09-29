@@ -80,7 +80,7 @@ signInGoogleAuth2 = function(options, callback)
 	if (gapi && gapi.auth2)
 	{
 		gapi.auth2.getAuthInstance().signIn({
-			// prompt: 'select_account'
+			prompt: 'select_account'
 		}).then(
 			function(result)
 			{
@@ -111,7 +111,6 @@ signInGoogleAuth2 = function(options, callback)
 				{
 					return;
 				}
-				
 
 				{
 					if (error.error)
@@ -150,9 +149,6 @@ logoutGoogleAuth2 = function(callback)
 		if (gapi && gapi.auth2)
 		{
 			if (debugGoogleAPI) console.log("sign out google account");
-			
-			// What the user really means is to "disconnect" the credentials... not just sign out of the account
-
 			if (getGoogleToken())
 			{
 				gapi.auth2.getAuthInstance().signOut().then(

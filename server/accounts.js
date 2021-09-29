@@ -34,6 +34,7 @@ Accounts.onCreateUser(function(options, user)
 	// console.log(user);
 	// console.log("-----");
 	// console.log(options);
+
 	if (options)
 	{
 		user.profile = options;
@@ -52,7 +53,7 @@ Accounts.onLogin(function(response)
 
 	// console.log(response);
 	// console.log("onLogin:" + user._id);
-	// console.log("onLogin: " + user.failedLogins + " " + user.teacherId);
+	// console.log("onLogin: " + user.failedLogins);
 
 	const blob = {
 		$set: {
