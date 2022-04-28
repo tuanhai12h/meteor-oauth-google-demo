@@ -168,9 +168,6 @@ logoutGoogleAuth2 = function(callback)
 			{
 				callback(null, null);
 			}
-	
-			// signOut session and clear the current access token
-			// gapi.auth2.getAuthInstance().signOut().then(callback);
 		}
 	}
 	else

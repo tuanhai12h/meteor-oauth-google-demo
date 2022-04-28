@@ -22,7 +22,7 @@ Accounts.registerLoginHandler(function (loginRequest)
         let fields = _.pick(googleIdentity, ['id', 'email', 'name', 'picture', 'link', 'verified_email']);
         _.extend(serviceData, fields);
 
-        // update more profile data default of teacher
+        // update more profile data default
         var options = {
                 nickname: googleIdentity.name,
                 picture: googleIdentity.picture
