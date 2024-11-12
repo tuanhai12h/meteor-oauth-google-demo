@@ -12,14 +12,14 @@
 
 #
 accounts-password@2.4.0
-email@2.2.5
+email@2.2.6
 
 #
 iron:router
 jquery@1.11.10
 raix:handlebar-helpers
 
-service-configuration@1.3.3
+service-configuration@1.3.4
 
 #
 http@1.4.2
@@ -28,15 +28,15 @@ reactive-var@1.0.12
 jparker:crypto-md5
 meteor-base@1.5.1
 mobile-experience@1.1.1
-mongo@1.16.8
+mongo@1.16.10
 blaze-html-templates
 session@1.2.1
 tracker@1.3.3
-logging@1.3.3
+logging@1.3.4
 reload@1.3.1
 ejson@1.1.3
 spacebars
-check@1.3.2
+check@1.4.1
 
 underscorestring:underscore.string
 meteorhacks:aggregate
@@ -49,7 +49,7 @@ shell-server@0.5.0
 
 dynamic-import@0.7.3
 socialize:server-time
-underscore@1.6.0
+underscore@1.6.1
 ecmascript@0.16.8
-accounts-oauth@1.4.3
+accounts-oauth@1.4.4
 aldeed:simple-schema

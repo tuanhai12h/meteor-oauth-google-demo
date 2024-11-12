@@ -8,11 +8,11 @@
     "test": "tests"
   },
   "dependencies": {
-    "@babel/runtime": "^7.15.4",
+    "@babel/runtime": "^7.26.0",
     "@meteorjs/ddp-graceful-shutdown": "^0.9.2",
     "activecampaign": "^1.2.5",
     "bcrypt": "^5.0.1",
-    "meteor-node-stubs": "^1.1.0",
+    "meteor-node-stubs": "^1.2.12",
     "mime-types": "^2.1.32"
   },
   "devDependencies": {
